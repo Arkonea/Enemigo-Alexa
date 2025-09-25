@@ -1,7 +1,7 @@
 import {useState } from "react";
 import { useParams } from "react-router-dom";
 
-function ActEnemigo(){
+function Actnivel(){
     const { id } = useParams();
 
     const [ vida, setVida ] = useState("");

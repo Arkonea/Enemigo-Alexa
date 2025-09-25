@@ -29,7 +29,7 @@ function Enemigo(){
         }
 
         function actualizar(id){
-            a
+            console.log("Actualizar enemigo con id:", id);
         }
 
 
@@ -57,7 +57,7 @@ function Enemigo(){
                             <td>{enemi.vida}</td>
                             <td>{enemi.ataque}</td>
                             <td>
-                                <button>Editar</button>
+                                <button onClick={() => actualizar(enemi.id_enemigo)}>Actualizar</button>
                                 <button onClick={() => eliminar(enemi.id_enemigo)}>Eliminar</button>
                                 </td>
                         </tr>
@@ -69,7 +69,7 @@ function Enemigo(){
 
         </div>
     )}
-}
+
 
 export default Enemigo;
 
